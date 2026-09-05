@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Peliculas y series</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>App de Peliculas y series</h1>
+    <p>Compartí tus series y películas favoritas</p>
+  </header>
+
+  <main>
+    <form id="form-recomendacion">
+      
+      <div class="campo">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Ej: Breaking Bad" required>
+      </div>
+
+      <div class="campo">
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+          <option value="">-- Seleccioná --</option>
+          <option value="accion">Acción</option>
+          <option value="comedia">Comedia</option>
+          <option value="drama">Drama</option>
+          <option value="terror">Terror</option>
+          <option value="ciencia-ficcion">Ciencia Ficción</option>
+          <option value="anime">Anime</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="plataforma">Plataforma:</label>
+        <select id="plataforma" name="plataforma" required>
+          <option value="">-- Seleccioná --</option>
+          <option value="netflix">Netflix</option>
+          <option value="hbo">HBO Max</option>
+          <option value="disney">Disney+</option>
+          <option value="prime">Prime Video</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="puntuacion">Puntuación (1-10):</label>
+        <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" required>
+      </div>
+
+      <div class="campo">
+        <label for="fecha">Fecha de estreno:</label>
+        <input type="date" id="fecha" name="fecha">
+      </div>
+
+      <div class="campo">
+        <label for="portada">URL de portada:</label>
+        <input type="url" id="portada" name="portada" placeholder="https://...">
+      </div>
+
+      <div class="campo">
+        <label for="resena">¿Por qué la recomendás?</label>
+        <textarea id="resena" name="resena" rows="4" placeholder="Escribí tu reseña..." required></textarea>
+      </div>
+
+      <div class="campo checkbox-campo">
+        <input type="checkbox" id="recomendado" name="recomendado">
+        <label for="recomendado">¿La recomendás totalmente?</label>
+      </div>
+
+      <button type="submit">Publicar Recomendación</button>
+
+    </form>
+  </main>
+
+</body>
+</html>
