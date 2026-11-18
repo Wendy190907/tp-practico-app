@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "short_name": "Recomendaciones",
   "name": "App de Películas y Series",
@@ -14,21 +13,4 @@
   "theme_color": "#6c63ff",
   "display": "standalone",
   "orientation": "portrait"
-=======
-{
-  "short_name": "Recomendaciones",
-  "name": "App de Películas y Series",
-  "icons": [
-    {
-      "src": "./icono.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "./index.html",
-  "background_color": "#f4f4f9",
-  "theme_color": "#6c63ff",
-  "display": "standalone",
-  "orientation": "portrait"
->>>>>>> a3effbea679d5be2bdac486ab42083880808f3dd
 }
